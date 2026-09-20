@@ -2,15 +2,15 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
 import { LogoMark } from "@/components/LogoMark";
-import { MapPin, Phone, QrCode } from "lucide-react";
+import { MapPin, Phone } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "مستشفى التداوي - Altadawy Hospital",
   description: "نظام إدارة النماذج الطبية الإلكترونية - رعاية بلا حدود",
   icons: {
-    icon: "/altadawy-logo.png",
-    shortcut: "/altadawy-logo.png",
-    apple: "/altadawy-logo.png",
+    icon: "/altadawy-logo.jpg",
+    shortcut: "/altadawy-logo.jpg",
+    apple: "/altadawy-logo.jpg",
   },
 };
 
@@ -82,25 +82,6 @@ function Footer() {
               </div>
             </div>
 
-            <a
-              href="https://www.google.com/maps/search/?api=1&query=%D9%85%D8%B3%D8%AA%D8%B4%D9%81%D9%89%20%D8%A7%D9%84%D8%AA%D8%AF%D8%A7%D9%88%D9%8A%D8%8C%20%D8%B4%D8%A7%D8%B1%D8%B9%20%D8%A7%D9%84%D9%83%D8%A7%D8%A8%D9%84%D8%A7%D8%AA%D8%8C%20%D8%A3%D9%85%D8%A7%D9%85%20%D8%A8%D8%A7%D8%A8%20%D8%AD%D9%8A%20%D8%A7%D9%84%D9%85%D8%B7%D8%B1%D9%8A%D8%A9%D8%8C%20%D8%A7%D9%84%D9%85%D8%B7%D8%B1%D9%8A%D8%A9%D8%8C%20%D8%A7%D9%84%D9%82%D8%A7%D9%87%D8%B1%D8%A9"
-              target="_blank"
-              rel="noreferrer"
-              className="group shrink-0 rounded-xl bg-white p-2 text-center shadow-lg transition hover:scale-105"
-              aria-label="فتح موقع مستشفى التداوي على خرائط Google"
-            >
-              <img
-                src="/altadawy-location-qr.png"
-                alt="QR Code لموقع مستشفى التداوي"
-                width={112}
-                height={112}
-                className="block h-28 w-28 rounded-md"
-              />
-              <span className="mt-1 flex items-center justify-center gap-1 text-[10px] font-bold text-[#084e87]">
-                <QrCode size={13} />
-                امسح للوصول
-              </span>
-            </a>
           </div>
         </div>
       </div>
